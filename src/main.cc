@@ -1,6 +1,11 @@
+#include "cpu/Registers.hh"
+#include <iostream>
 
+using namespace Hardwares;
 
-
-int main(int argc, char* argv[]) {
+int main() {
+    Registers a;
+    uint8_t b = a.getZeroFlag();
+    std::cout << +b;
     return 0;
 }
